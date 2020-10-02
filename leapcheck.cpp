@@ -10,7 +10,13 @@ int main()
 	{
 		if(leap%100==0)
 		{
-			cout<<"its leap year";
+			if(leap%400==0)
+			{
+				cout<<"Its a leap year"<<"\n";
+			}
+			else{
+				cout<<"Its not a leap year"<<"\n";
+			}
 		}
 		else{
 			cout<<"Its a leap year"<<"\n";
