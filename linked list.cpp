@@ -63,6 +63,18 @@ class queue{
   
     free(temp);  // Free memory 
 }
+	
+bool search(Node* head, int x)  
+{  
+    Node* current = head; // Initialize current  
+    while (current != NULL)  
+    {  
+        if (current->key == x)  
+            return true;  
+        current = current->next;  
+    }  
+    return false;  
+}  
 		
 		
 	
@@ -72,4 +84,7 @@ int main()
 {
 	queue stud;
 	stud.insert();
+	
+	search(head, 33)? cout<<"Yes" : cout<<"No";  
+        return 0;  
 }
